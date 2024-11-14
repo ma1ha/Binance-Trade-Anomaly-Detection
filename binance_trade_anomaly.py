@@ -14,7 +14,7 @@ from datetime import datetime
 def fetch_historical_trades(symbol, limit=500):
     url = f'https://api.binance.com/api/v3/historicalTrades?symbol={symbol}&limit={limit}'
     headers = {
-        'X-MBX-APIKEY': 'mg5uPMRIBWYJzidv5fltOqVQoIjTTnDHFYh6c0GewPzKLf5jOuwBnfNoM8RKPFcR'
+        'X-MBX-APIKEY': 'YOUR API KEY'
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
